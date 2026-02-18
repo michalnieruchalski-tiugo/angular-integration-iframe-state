@@ -1,0 +1,17 @@
+{
+  "name": "tiny-issue-plain-js",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.7"
+  },
+  "dependencies": {
+    "tinymce": "^7.6.1"
+  }
+}

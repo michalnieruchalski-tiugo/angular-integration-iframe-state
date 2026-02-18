@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+      }
+
+      .left {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+      }
+
+      .right {
+        width: 100%;
+        height: 100%;
+        background-color: yellow;
+      }
+
+      button {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Change sides</button>
+    <p>
+      After click on "Change sides" button green and yellow rectangles are being
+      swapped and the editor stops working
+    </p>
+    <main>
+      <div class="left">
+        <div class="mce-container"></div>
+      </div>
+      <div class="right"></div>
+    </main>
+    <script src="/node_modules/tinymce/tinymce.min.js"></script>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
